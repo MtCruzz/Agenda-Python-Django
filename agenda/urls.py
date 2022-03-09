@@ -23,4 +23,5 @@ urlpatterns = [
     path('eventos/<titulo_evento>', views.retorna_data),
     path('agenda/', views.lista_eventos),
     path('',RedirectView.as_view(url='/agenda'))
+    #teste
 ]

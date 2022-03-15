@@ -11,6 +11,8 @@
             <li>
                 <div style={% if evento.get_evento_atrasado %}
                                 "color:red"
+                            {% elif evento.get_evento_falta_uma_hora %}
+                                "color: orange"
                             {% endif %} >
                     {{ evento.titulo }} - {{ evento.get_data_evento }}
 
